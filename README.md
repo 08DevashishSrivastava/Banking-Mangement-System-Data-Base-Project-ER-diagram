@@ -1,131 +1,138 @@
-🏦 Banking Management System
-
-A Banking Management System developed to manage basic banking operations such as customer accounts, transactions, and bank details. This project demonstrates the use of database management concepts, relations, and CRUD operations in a real-world banking scenario.
-
+🏦 Banking Management System (DBMS Project)
 📌 Project Overview
 
-The Banking Management System is designed to automate and simplify banking processes like:
+The Banking Management System is a database-driven project designed to manage core banking operations such as customer management, account handling, transactions, payments, and staff management.
+This project is created using DBMS concepts and is represented through a detailed Entity Relationship (ER) Diagram.
 
-Customer registration
+The system ensures proper relationships between users, accounts, transactions, payments, and staff, making banking operations efficient, secure, and well-structured.
 
-Account management
+🎯 Objectives
 
-Deposits and withdrawals
+To design a structured Banking Database System
 
-Transaction tracking
+To understand ER modeling and relationships
 
-Bank–customer relationships
+To manage customers, accounts, transactions, and payments
 
-This project is suitable for DBMS, SQL, and backend development practice.
+To implement 1:1, 1:M, and M:N relationships
+
+To apply DBMS concepts in a real-world scenario
+
+🗂️ Entities & Attributes
+👤 Customer (Process)
+
+Custom ID
+
+Name
+
+Address
+
+Mobile No
+
+Gender
+
+🧑‍💼 Staff (Process)
+
+Staff ID
+
+Staff Name
+
+Staff No
+
+Email
+
+Date of Birth (DOB)
+
+💳 Account
+
+Account ID
+
+Account No
+
+User Name
+
+Password
+
+Transaction Limit
+
+💸 Transaction
+
+Transaction ID
+
+Transaction Type
+
+Amount
+
+Receiver Amount
+
+Date
+
+💵 Payment
+
+Payment ID
+
+Payment Type
+
+Payment Amount
+
+Biller Name
+
+Biller Amount
+
+🔗 Relationships
+
+Customer ↔ Account
+
+Credit & Login (1 : 1)
+
+Account ↔ Transaction
+
+Make (1 : M)
+
+Account ↔ Payment
+
+Make (1 : M)
+
+Staff ↔ Customer
+
+Managed By (M : N)
 
 🛠️ Technologies Used
 
-Programming Language: SQL
-
 Database: MySQL
 
-Server Environment: XAMPP / MySQL Server
+Design Tool: ER Diagram Tool
 
-Tools: MySQL Workbench / phpMyAdmin
+Language: SQL
 
-📂 Project Structure
-Banking-Management-System/
-│
-├── database/
-│   ├── create_database.sql
-│   ├── create_tables.sql
-│   ├── insert_values.sql
-│
-├── diagrams/
-│   ├── ER_Diagram.png
-│   ├── Relational_Model.png
-│
-├── queries/
-│   ├── select_queries.sql
-│   ├── join_queries.sql
-│
-└── README.md
-🗄️ Database Details
-Main Tables
+Concepts: DBMS, ER Modeling, Normalization
 
-Bank
+📊 ER Diagram
 
-Customer
+The ER diagram visually represents:
 
-Account
+Entities and attributes
 
-Transaction
+Primary and foreign keys
 
-Branch
+Relationships between tables
 
-Relationships
+(ER diagram included in the repository)
 
-One customer can have multiple accounts (One-to-Many)
+🚀 How to Use
 
-One bank can have many customers
+Clone the repository
 
-Accounts are linked to transactions
+git clone https://github.com/your-username/banking-management-system.git
 
-Customers and banks are connected through accounts
+Import the SQL file into MySQL
 
-⚙️ Features
+Execute the queries in order
 
-Create and manage customer records
+View and test relationships using SELECT queries
 
-Open and manage bank accounts
-
-Perform deposit and withdrawal operations
-
-Maintain transaction history
-
-Use of primary keys and foreign keys
-
-Implementation of one-to-one and one-to-many relationships
-
-🚀 How to Run the Project
-
-Install XAMPP or any MySQL server
-
-Start MySQL
-
-Open phpMyAdmin or MySQL Workbench
-
-Create a new database:
-
-CREATE DATABASE banking_management;
-
-Import or run the provided SQL files in order:
-
-Create tables
-
-Insert values
-
-Execute queries to test functionality
-
-📊 Sample Operations
-
-View all customers
-
-Check account balance
-
-Display transaction history
-
-Join customer and bank details
-
-🎓 Learning Outcomes
-
-Understanding of DBMS concepts
-
-Hands-on experience with SQL queries
-
-Practical use of relationships in databases
-
-Real-world banking system simulation
-
-👨‍💻 Author
+👥 Contributors
 
 Devashish Srivastava
-B.Tech CSE Student
-IILM University
 
-🔗 GitHub: 08DevashishSrivastava
+Bhavya Bisht
